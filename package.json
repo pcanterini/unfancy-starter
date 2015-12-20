@@ -1,0 +1,21 @@
+{
+  "name": "unfancy-starter",
+  "version": "1.0.0",
+  "description": "Starter Kit for Unfancy Web Apps",
+  "private": true,
+  "scripts": {
+    "build:js": "babel src -d dist",
+    "build:scss": "babel src -d dist",
+    "serve:dev": "opener http://localhost:3000 & serve dist",
+    "test": ""
+  },
+  "author": "Pedro Canterini",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
+    "opener": "^1.4.1",
+    "serve": "^1.4.0"
+  }
+}
