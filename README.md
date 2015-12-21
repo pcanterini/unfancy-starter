@@ -17,7 +17,7 @@ npm run serve
 
 ### Todo
 - [ ] Improve npm build scripts
-- [ ] Add Handlebars support
+- [x] Add Handlebars support
 - [ ] Add Sass support
 - [ ] Add html build process
 - [ ] Consider adding webpack / browserify

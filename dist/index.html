@@ -10,9 +10,22 @@
 </head>
 
 <body>
-    <p>Sometimes people forget that they do not need a Batmobile to get to the grocery store.</p>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
+                {{body}}
+            </div>
+        </div>
+    </script>
+
+    <div class="app"></div>
+
     <script src="//zeptojs.com/zepto.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="/js/main.js"></script>
+
 </body>
 
 </html>
