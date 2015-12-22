@@ -1,5 +1,5 @@
 # unfancy-starter (WIP)
-Simple and unfancy front end starter kit for when you don't want to drive the Batmobile just to get to the grocery store.
+Simple and unfancy front-end starter kit for when you don't want to drive the Batmobile just to get to the grocery store.
 Based on [How to Write Unfancy Web Apps](https://thedubiousdisc.wordpress.com/2015/12/19/how-to-write-unfancy-web-apps/) blog post.
 
 ### Stack
@@ -12,13 +12,13 @@ Based on [How to Write Unfancy Web Apps](https://thedubiousdisc.wordpress.com/20
 ```bash
 git clone git@github.com:pcanterini/unfancy-starter.git my-unfancy-project
 npm run build:js
-npm run serve
+npm run serve:dev
 ```
 
 ### Todo
-- [ ] Improve npm build scripts
 - [x] Add Handlebars support
-- [ ] Add Sass support
-- [ ] Add html build process
+- [x] Add Sass support
+- [x] Add html build process
+- [ ] Add watch npm script to build process
 - [ ] Consider adding webpack / browserify
 - [ ] Add linting
