@@ -11,8 +11,8 @@ Based on [How to Write Unfancy Web Apps](https://thedubiousdisc.wordpress.com/20
 ### Use
 ```bash
 git clone git@github.com:pcanterini/unfancy-starter.git my-unfancy-project
-npm run build:js
-npm run serve:dev
+cd my-unfancy-project && npm install
+npm run build:watch
 ```
 
 ### Todo
