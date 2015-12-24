@@ -19,6 +19,6 @@ npm run serve:dev
 - [x] Add Handlebars support
 - [x] Add Sass support
 - [x] Add html build process
-- [ ] Add watch npm script to build process
+- [x] Add watch npm script to build process
 - [ ] Consider adding webpack / browserify
 - [ ] Add linting

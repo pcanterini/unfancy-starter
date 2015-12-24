@@ -6,9 +6,13 @@
   "scripts": {
     "build:js": "babel src -d dist",
     "build:css": "node-sass --output dist/css src/scss",
+    "watch:css": "npm run build:css -- -w",
+    "watch:js": "npm run build:js -- -w",
+    "watch:html": "watch 'npm run build:html' src",
     "build:html": "html-minifier --output dist/index.html --collapse-whitespace --remove-comments src/index.html",
+    "build:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html' 'npm run serve:dev'",
     "build": "npm run build:js -s && npm run build:css -s && npm run build:html -s",
-    "serve:dev": "npm run build && opener http://localhost:3000 && serve dist",
+    "serve:dev": "opener http://localhost:3000 && serve dist",
     "test": ""
   },
   "author": "Pedro Canterini",
@@ -20,6 +24,7 @@
     "html-minifier": "^1.0.0",
     "node-sass": "^3.4.2",
     "opener": "^1.4.1",
+    "parallelshell": "^2.0.0",
     "serve": "^1.4.0"
   }
 }
