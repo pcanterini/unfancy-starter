@@ -6,12 +6,13 @@
   "scripts": {
     "build:js": "babel src -d dist",
     "build:css": "node-sass --output dist/css src/scss",
+    "build:html": "html-minifier --output dist/index.html --collapse-whitespace --remove-comments src/index.html",
+    "build": "npm run build:js -s && npm run build:css -s && npm run build:html -s",
+    "build:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html' 'npm run serve:dev'",
+    "prebuild:watch": "npm run build",
     "watch:css": "npm run build:css -- -w",
     "watch:js": "npm run build:js -- -w",
     "watch:html": "watch 'npm run build:html' src",
-    "build:html": "html-minifier --output dist/index.html --collapse-whitespace --remove-comments src/index.html",
-    "build:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html' 'npm run serve:dev'",
-    "build": "npm run build:js -s && npm run build:css -s && npm run build:html -s",
     "serve:dev": "opener http://localhost:3000 && serve dist",
     "test": ""
   },
