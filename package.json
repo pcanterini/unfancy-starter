@@ -25,6 +25,7 @@
     "node-sass": "^3.4.2",
     "opener": "^1.4.1",
     "parallelshell": "^2.0.0",
-    "serve": "^1.4.0"
+    "serve": "^1.4.0",
+    "watch": "^0.17.1"
   }
 }
