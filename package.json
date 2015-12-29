@@ -14,14 +14,18 @@
     "watch:js": "npm run build:js -- -w",
     "watch:html": "watch 'npm run build:html' src",
     "serve:dev": "opener http://localhost:3000 && serve dist",
+    "lint": "eslint src/js || true",
     "test": ""
   },
   "author": "Pedro Canterini",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.3.17",
+    "babel-eslint": "^4.1.6",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-2": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-plugin-babel": "^3.0.0",
     "html-minifier": "^1.0.0",
     "node-sass": "^3.4.2",
     "opener": "^1.4.1",
