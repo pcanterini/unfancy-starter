@@ -26,4 +26,4 @@ npm run lint
 - [x] Add html build process
 - [x] Add watch npm script to build process
 - [x] Add linting
-- [ ] Consider adding webpack / browserify / npmcdn?
+- [ ] Consider adding webpack / browserify / unpkg?
